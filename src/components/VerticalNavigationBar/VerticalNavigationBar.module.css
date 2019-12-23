@@ -1,0 +1,18 @@
+.NavigationContainer {
+    height: 100%;
+    width: 5.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #080808;
+}
+
+.NavigationDivider {
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+}
+
+.ProfileLogo {
+    margin: 1rem auto;
+}
