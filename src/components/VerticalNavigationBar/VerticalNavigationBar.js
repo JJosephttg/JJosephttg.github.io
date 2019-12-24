@@ -12,7 +12,7 @@ const VerticalNavigationBar = _ => {
         <div className={styles.NavigationContainer}>
             <i className={["material-icons", styles.MenuButton].join(' ')}>menu</i>
             <div className={styles.NavigationDivider} />
-            <NavigationItem iconType="perm_identity" itemName="About"/>
+            <NavigationItem active iconType="perm_identity" itemName="About"/>
             <NavigationItem iconType="view_comfy" itemName="Work"/>
             <NavigationItem iconType="speaker_notes" itemName="Contact"/>  
         </div>

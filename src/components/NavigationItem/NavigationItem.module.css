@@ -2,10 +2,16 @@
     font-size: 1rem;
     display: flex;
     align-items: center;
+    color: #909090;
+}
+
+.NavItem:hover, .NavItem.CurrentPage {
+    border-left: 2px solid red;
+    color: white;
 }
 
 .NavItem:hover {
-    border-left: 2px solid red;
+    cursor: pointer;
 }
 
 .NavText {
