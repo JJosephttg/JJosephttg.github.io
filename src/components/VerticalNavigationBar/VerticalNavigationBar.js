@@ -1,13 +1,10 @@
 import React from 'react';
 
-import ProfileLogo from '../ProfileLogo/ProfileLogo';
 import NavigationItem from '../NavigationItem/NavigationItem';
-
-import profilePic from '../../assets/PortfolioSelfPic.jpg';
 
 import styles from './VerticalNavigationBar.module.css';
 
-const VerticalNavigationBar = _ => {
+const VerticalNavigationBar = props => {
     return (
         <div className={styles.NavigationContainer}>
             <div className={styles.MenuButtonContainer}>
@@ -18,9 +15,9 @@ const VerticalNavigationBar = _ => {
                 </svg> 
             </div>
             <div className={styles.NavigationDivider} />
-            <NavigationItem active iconType="perm_identity" itemName="About"/>
-            <NavigationItem iconType="view_comfy" itemName="Work"/>
-            <NavigationItem iconType="speaker_notes" itemName="Contact"/>  
+            <NavigationItem iconType="perm_identity" itemName="About" link="/"/>
+            <NavigationItem iconType="view_comfy" itemName="Work" link="/work"/>
+            <NavigationItem iconType="speaker_notes" itemName="Contact" link="/contact"/>  
         </div>
     );
 }
