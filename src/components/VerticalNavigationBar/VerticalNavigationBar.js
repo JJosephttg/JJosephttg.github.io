@@ -10,7 +10,13 @@ import styles from './VerticalNavigationBar.module.css';
 const VerticalNavigationBar = _ => {
     return (
         <div className={styles.NavigationContainer}>
-            <i className={["material-icons", styles.MenuButton].join(' ')}>menu</i>
+            <div className={styles.MenuButtonContainer}>
+                <i className={["material-icons", styles.MenuButton].join(' ')}>menu</i>
+                <svg width="40" height="40">
+                    <circle className={styles.OutlineCircle} r="19" cx="20" cy="20" fill="transparent"/>
+                    <circle className={styles.ProgressCircle} r="19" cx="20" cy="20" fill="transparent"/>
+                </svg> 
+            </div>
             <div className={styles.NavigationDivider} />
             <NavigationItem active iconType="perm_identity" itemName="About"/>
             <NavigationItem iconType="view_comfy" itemName="Work"/>

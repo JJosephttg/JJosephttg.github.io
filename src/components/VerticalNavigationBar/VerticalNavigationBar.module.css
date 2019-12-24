@@ -12,27 +12,43 @@
 }
 
 .MenuButton {
-    margin-left: 1rem;
-    margin-top: 4rem;
-    margin-bottom: 1rem;
+    z-index: 10;
+    position: absolute;
     font-size: 1.5rem;
-    border-radius: 50%;
-    border: 2px solid white;
-    height: 2.5rem;
-    width: 2.5rem;
-    text-align: center;
-    vertical-align: middle;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: width .5s, height .5s, transform .5s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.MenuButton:hover {
-    background-color: white;
-    color: black;
+.MenuButtonContainer {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    position: relative;
     cursor: pointer;
-    width: 3rem;
-    height: 3rem;
-    transform: translate(-.25rem, -.25rem);
+}
+
+.MenuButtonContainer .OutlineCircle {
+    stroke-dashoffset: 0;
+    stroke: #666;
+}
+
+.MenuButtonContainer svg circle {
+    stroke-dasharray: 119.380521;
+    stroke-width: 2px;
+}
+
+.MenuButtonContainer .ProgressCircle {
+    stroke-dashoffset: 119.380521;
+    transition: stroke-dashoffset .5s linear;
+}
+
+.MenuButtonContainer:hover .ProgressCircle {
+    stroke-dashoffset: 0;
+}
+
+.ProgressCircle {
+    stroke: red;
 }
