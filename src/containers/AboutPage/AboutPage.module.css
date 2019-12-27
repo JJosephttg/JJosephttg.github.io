@@ -2,6 +2,52 @@
     font-family: "bebas_neueregular", "sans-serif";
     font-feature-settings: "liga", "kern";
     text-align: center;
-    margin-top: 15rem;
     font-size: 4rem;
+    animation: slideFromLeft 2s forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+@keyframes slideFromLeft {
+    0% {
+        transform: translate(-15rem, 0);
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.SelfPicture {
+    margin: auto;
+    margin-top: 8rem;
+    animation: slideFromTop 2s forwards;
+}
+
+@keyframes slideFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50rem);
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.Divider {
+    height: 1px;
+    background-color: gray;
+    width: 80%;
+    margin: auto;
+}
+
+@media (min-width: 50rem) {
+    .Divider {
+        width: 30rem;
+    }
+}
+
+.Description {
+    text-align: center;
+    margin-top: 3rem;
 }
