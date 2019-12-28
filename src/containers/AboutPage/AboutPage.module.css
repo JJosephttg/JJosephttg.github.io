@@ -49,5 +49,13 @@
 
 .Description {
     text-align: center;
+    margin: auto;
     margin-top: 3rem;
+    width: 60%;
+    font-size: 1.25rem;
+}
+
+.Letter {
+    color: red;
+    cursor: pointer;
 }
