@@ -39,6 +39,9 @@
     background-color: gray;
     width: 80%;
     margin: auto;
+    animation: slideFromBottom 2s forwards;
+    animation-delay: 3s;
+    opacity: 0;
 }
 
 @media (min-width: 50rem) {
@@ -53,6 +56,19 @@
     margin-top: 3rem;
     width: 60%;
     font-size: 1.25rem;
+    animation: slideFromBottom 2s forwards;
+    animation-delay: 3s;
+    opacity: 0;
+}
+
+@keyframes slideFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .Letter {
