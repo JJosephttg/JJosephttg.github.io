@@ -1,0 +1,23 @@
+.Divider {
+    height: 1px;
+    background-color: gray;
+    margin-left: 2rem;
+    margin-right: 12rem;
+}
+
+.Title {
+    margin-left: 3rem;
+    margin-top: 4rem;
+    font-family: "bebas_neueregular";
+}
+
+.ProjectsContainer {
+    background-color: #222;
+    margin-left: 4rem;
+    margin-right: 14rem;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 275px;
+}

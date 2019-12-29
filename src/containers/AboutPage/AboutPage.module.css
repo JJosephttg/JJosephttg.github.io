@@ -3,7 +3,7 @@
     font-feature-settings: "liga", "kern";
     text-align: center;
     font-size: 4rem;
-    animation: slideFromLeft 2s forwards;
+    animation: slideFromLeft 1.5s forwards;
     animation-delay: 1s;
     opacity: 0;
 }
@@ -21,7 +21,7 @@
 .SelfPicture {
     margin: auto;
     margin-top: 8rem;
-    animation: slideFromTop 2s forwards;
+    animation: slideFromTop 1.5s forwards;
 }
 
 @keyframes slideFromTop {
@@ -39,8 +39,8 @@
     background-color: gray;
     width: 80%;
     margin: auto;
-    animation: slideFromBottom 2s forwards;
-    animation-delay: 3s;
+    animation: slideFromBottom 1.5s forwards;
+    animation-delay: 2s;
     opacity: 0;
 }
 
@@ -54,11 +54,14 @@
     text-align: center;
     margin: auto;
     margin-top: 3rem;
+    padding: 1rem;
     width: 60%;
     font-size: 1.25rem;
-    animation: slideFromBottom 2s forwards;
-    animation-delay: 3s;
+    animation: slideFromBottom 1.5s forwards;
+    animation-delay: 2s;
     opacity: 0;
+    background-color: #222;
+    border-radius: 1rem;
 }
 
 @keyframes slideFromBottom {

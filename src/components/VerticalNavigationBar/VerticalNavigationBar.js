@@ -16,7 +16,7 @@ const VerticalNavigationBar = props => {
             </div>
             <div className={styles.NavigationDivider} />
             <NavigationItem iconType="perm_identity" itemName="About" link="/"/>
-            <NavigationItem iconType="view_comfy" itemName="Work" link="/work"/>
+            <NavigationItem iconType="view_comfy" itemName="Projects" link="/projects"/>
             <NavigationItem iconType="speaker_notes" itemName="Contact" link="/contact"/>  
         </div>
     );
