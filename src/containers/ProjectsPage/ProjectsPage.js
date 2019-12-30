@@ -19,15 +19,17 @@ const ProjectsPage = _ => {
 const projects = [
     {
         id: 1,
-        name: "Geometry Dash",
+        name: "Geometry Dash C# Remake",
         pictures: [],
-        repoLink: ""
+        repoLink: "",
+        languages: "C#, WPF"
     },
     {
         id: 2,
         name: "My Portfolio",
         pictures: [],
-        repoLink: ""
+        repoLink: "",
+        languages: "React/JS, HTML, CSS"
     }
 ];
 

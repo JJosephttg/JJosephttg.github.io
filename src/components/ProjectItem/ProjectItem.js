@@ -21,6 +21,7 @@ const ProjectItem = props => {
                 </div>
             </div>
             <h1 className={styles.ProjectTitle}>{props.project.name}</h1>
+            <h1 className={styles.ProjectDesc}>({props.project.languages})</h1>
         </div>
     );
 }

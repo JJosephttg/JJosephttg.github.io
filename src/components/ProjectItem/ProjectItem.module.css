@@ -3,21 +3,24 @@
     height: 20rem;
     width: 15rem;
     margin: 1rem;
-    border-radius: 1rem;
+    border-radius: .5rem;
+    box-shadow: 2px 2px 1rem #121212;
 }
 
 .ProjectImage {
     width: 15rem;
     height: 14rem;
     background-color: black;
-    border-bottom: 1px solid gray;
-    border-radius: 1rem 1rem 0 0;
+    border-bottom: 1px solid red;
+    border-radius: .5rem .5rem 0 0;
 }
 
 .ProjectTitle {
     font-size: 1rem;
     text-align: center;
     text-overflow: ellipsis;
+    overflow: hidden;
+    margin: .5rem;
 }
 
 .ButtonOverlay {
@@ -39,4 +42,13 @@
     color: white;
     display: inline-flex;
     justify-content: center;
+}
+
+.ProjectDesc {
+    font-size: .8rem;
+    text-align: center;
+    color: #AAA;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 0 1rem;
 }
