@@ -13,6 +13,9 @@
     background-color: black;
     border-bottom: 1px solid red;
     border-radius: .5rem .5rem 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .ProjectTitle {

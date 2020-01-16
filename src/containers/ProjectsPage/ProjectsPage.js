@@ -20,14 +20,18 @@ const projects = [
     {
         id: 1,
         name: "Geometry Dash C# Remake",
-        pictures: [],
+        pictures: [
+            require("../../assets/GeometryDash1.png"), 
+            require("../../assets/GeometryDash2.png"), 
+            require("../../assets/GeometryDash3.png")
+        ],
         repoLink: "",
         languages: "C#, WPF"
     },
     {
         id: 2,
         name: "My Portfolio",
-        pictures: [],
+        pictures: [/*TODO: When finished, upload portfolio pictures*/],
         repoLink: "",
         languages: "React/JS, HTML, CSS"
     }
