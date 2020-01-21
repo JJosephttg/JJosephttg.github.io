@@ -31,7 +31,9 @@ const projects = [
     {
         id: 2,
         name: "My Portfolio",
-        pictures: [/*TODO: When finished, upload portfolio pictures*/],
+        pictures: [
+            require("../../assets/PortfolioProject1.png")
+        ],
         repoLink: "",
         languages: "React/JS, HTML, CSS"
     }

@@ -1,3 +1,10 @@
+.NavigationMenuTitle {
+    font-family: "bebas_neueregular", "sans-serif";
+    text-align: left;
+    margin-left: 3rem;
+    margin-bottom: .5rem;
+}
+
 .NavigationContainer {
     position: fixed;
     top: 0;
