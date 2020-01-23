@@ -1,0 +1,11 @@
+.ContactContainer {
+    background-color: #222;
+    border-radius: 2rem;
+    text-align: center;
+    margin-left: 4rem;
+    margin-right: 14rem;
+    margin-top: 12rem;
+    padding: 1rem;
+    vertical-align: middle;
+    min-width: 275px;
+}
