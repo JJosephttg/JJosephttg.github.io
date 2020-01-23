@@ -4,8 +4,25 @@
     text-align: center;
     margin-left: 4rem;
     margin-right: 14rem;
-    margin-top: 12rem;
+    margin-top: 6rem;
     padding: 1rem;
     vertical-align: middle;
     min-width: 275px;
+}
+
+.Divider {
+    height: 1px;
+    background-color: gray;
+    margin-left: 2rem;
+    margin-right: 12rem;
+}
+
+.Title {
+    margin-left: 3rem;
+    margin-top: 4rem;
+    font-family: "bebas_neueregular";
+}
+
+.ContactLink {
+    color: white;
 }
