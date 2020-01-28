@@ -43,8 +43,16 @@
     width: 2rem;
     margin: 0 .5rem;
     color: white;
-    display: inline-flex;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.ProjectButton:hover {
+    background-color: white;
+    color: black;
 }
 
 .ProjectDesc {

@@ -22,7 +22,7 @@ const ProjectItem = props => {
                 <div style={{backgroundImage: "url(" + props.project.pictures[currentImageIndex]+ ")"}} className={styles.ProjectImage}/>
                 <div className={styles.ButtonOverlay}>
                     <button onClick={previousBtnClicked} className={projectButtonStyle}>navigate_before</button>
-                    <button style={{fontSize: "1.2rem"}} className={projectButtonStyle}>launch</button>
+                    <a target="_blank" href={props.project.repoLink} className={projectButtonStyle}>launch</a>
                     <button onClick={nextBtnClicked} className={projectButtonStyle}>navigate_next</button>
                 </div>
             </div>

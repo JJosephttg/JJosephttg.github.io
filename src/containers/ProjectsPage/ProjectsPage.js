@@ -25,7 +25,7 @@ const projects = [
             require("../../assets/GeometryDash2.png"), 
             require("../../assets/GeometryDash3.png")
         ],
-        repoLink: "",
+        repoLink: "https://github.com/JJosephttg/GeometryDash",
         languages: "C#, WPF"
     },
     {
@@ -34,7 +34,7 @@ const projects = [
         pictures: [
             require("../../assets/PortfolioProject1.png")
         ],
-        repoLink: "",
+        repoLink: "https://github.com/JJosephttg/JJosephttg.github.io",
         languages: "React/JS, HTML, CSS"
     }
 ];
