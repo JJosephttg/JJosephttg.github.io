@@ -50,7 +50,7 @@
     align-items: center;
 }
 
-.ProjectButton:hover {
+.ProjectButton:hover:enabled {
     background-color: white;
     color: black;
 }
@@ -62,4 +62,13 @@
     text-overflow: ellipsis;
     overflow: hidden;
     margin: 0 1rem;
+}
+
+.disabled {
+    color: gray;
+    background-color: #222;
+}
+
+.disabled:hover {
+    cursor: default;
 }

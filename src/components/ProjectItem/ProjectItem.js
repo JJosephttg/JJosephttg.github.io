@@ -4,26 +4,50 @@ import styles from './ProjectItem.module.css';
 
 const ProjectItem = props => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [isPrevDisabled, setIsPrevDisabled] = useState(currentImageIndex === 0);
+    const [isNextDisabled, setIsNextDisabled] = useState(currentImageIndex >= props.project.pictures.length-1);
+
+    const updateIsDisabledButtons = index => {
+        //console.log("Current Image Index: " + index);
+        if(index === 0) setIsPrevDisabled(true);
+        else setIsPrevDisabled(false);
+
+        if(index >= props.project.pictures.length - 1) setIsNextDisabled(true);
+        else setIsNextDisabled(false);
+    }
 
     const previousBtnClicked = _ => {
         if(currentImageIndex === 0) return;
-        setCurrentImageIndex(currentImageIndex - 1);
+
+        var index = currentImageIndex - 1;
+        setCurrentImageIndex(index);
+        updateIsDisabledButtons(index);
     }
 
     const nextBtnClicked = _ => {
         if(currentImageIndex >= props.project.pictures.length - 1) return;
-        setCurrentImageIndex(currentImageIndex + 1);
+
+        var index = currentImageIndex + 1;
+        setCurrentImageIndex(index);
+        updateIsDisabledButtons(index);
     }
 
-    const projectButtonStyle = ["material-icons", styles.ProjectButton].join(' ');
+    const projectButtonStyleArr = ["material-icons", styles.ProjectButton];
+
+    let nextProjectButtonStyle;
+    let prevProjectButtonStyle = nextProjectButtonStyle = projectButtonStyleArr.join(' ');
+
+    if(isNextDisabled) nextProjectButtonStyle = [...projectButtonStyleArr, styles.disabled].join(' ');
+    if(isPrevDisabled) prevProjectButtonStyle = [...projectButtonStyleArr, styles.disabled].join(' ');
+    
     return (
         <div className={styles.ProjectContainer}>
             <div style={{position: "relative"}}>
                 <div style={{backgroundImage: "url(" + props.project.pictures[currentImageIndex]+ ")"}} className={styles.ProjectImage}/>
                 <div className={styles.ButtonOverlay}>
-                    <button onClick={previousBtnClicked} className={projectButtonStyle}>navigate_before</button>
-                    <a target="_blank" href={props.project.repoLink} className={projectButtonStyle}>launch</a>
-                    <button onClick={nextBtnClicked} className={projectButtonStyle}>navigate_next</button>
+                    <button disabled={isPrevDisabled} onClick={previousBtnClicked} className={prevProjectButtonStyle}>navigate_before</button>
+                    <a rel="noopener noreferrer" target="_blank" href={props.project.repoLink} className={projectButtonStyleArr.join(' ')}>launch</a>
+                    <button disabled={isNextDisabled} onClick={nextBtnClicked} className={nextProjectButtonStyle}>navigate_next</button>
                 </div>
             </div>
             <h1 className={styles.ProjectTitle}>{props.project.name}</h1>
