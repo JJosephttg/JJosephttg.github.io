@@ -36,6 +36,24 @@ const projects = [
         ],
         repoLink: "https://github.com/JJosephttg/JJosephttg.github.io",
         languages: "React/JS, HTML, CSS"
+    },
+    {
+        id: 3,
+        name: "NuGet Package Manager Remake/Alternative",
+        pictures: [
+            require("../../assets/NuGetAlt1.png")
+        ],
+        repoLink: "https://github.com/JJosephttg/NuGetPackageExplorerAlternative",
+        languages: "C#, WPF"
+    },
+    {
+        id: 4,
+        name: "Mass Email Parser",
+        pictures: [
+            require("../../assets/WebScraper1.png")
+        ],
+        repoLink: "https://github.com/JJosephttg/Mass-Email-Parser",
+        languages: "Windows PowerShell"
     }
 ];
 
