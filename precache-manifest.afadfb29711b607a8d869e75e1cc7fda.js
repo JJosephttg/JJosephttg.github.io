@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b3996299e0e9c00627a5494703ccf730",
+    "revision": "91277ff3226ca2e8575bd29f07ec3277",
     "url": "/index.html"
   },
   {
-    "revision": "64cc79b825734dd52c29",
+    "revision": "763405049e40ea92de1e",
     "url": "/static/css/main.11eafbc0.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.9f79b472.chunk.js.LICENSE"
   },
   {
-    "revision": "64cc79b825734dd52c29",
-    "url": "/static/js/main.1a888942.chunk.js"
+    "revision": "763405049e40ea92de1e",
+    "url": "/static/js/main.935ac4a2.chunk.js"
   },
   {
     "revision": "77e9cfd191d9b61f6ab0",
@@ -36,12 +36,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/GeometryDash3.0e084461.png"
   },
   {
+    "revision": "240efda0f04f3994268fed593dbfd6cd",
+    "url": "/static/media/NuGetAlt1.240efda0.png"
+  },
+  {
     "revision": "07a277d24a433a0c7531c8f78d1bb9fb",
     "url": "/static/media/PortfolioProject1.07a277d2.png"
   },
   {
     "revision": "63e13bf56e7e211859f61e323c6cbd88",
     "url": "/static/media/PortfolioSelfPic.63e13bf5.jpg"
+  },
+  {
+    "revision": "ad90b813487f00ee0464a60bc1896f49",
+    "url": "/static/media/WebScraper1.ad90b813.png"
   },
   {
     "revision": "b8a04d766fb13616ffab3fc1e89fe91e",
