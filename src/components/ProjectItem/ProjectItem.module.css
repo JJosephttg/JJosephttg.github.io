@@ -55,6 +55,10 @@
     color: black;
 }
 
+.SourceLink {
+    text-decoration: none;
+}
+
 .ProjectDesc {
     font-size: .8rem;
     text-align: center;
