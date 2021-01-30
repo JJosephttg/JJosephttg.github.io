@@ -10,7 +10,7 @@ const ProjectsPage = _ => {
             <h1 className={styles.Title}>Projects</h1>
             <div className={styles.Divider}/>
             <div className={styles.ProjectsContainer}>
-                { projects.map(item => <ProjectItem project={item} key={item.id} />) }
+                { projects.map(item => <ProjectItem project={item} key={item.name} />) }
             </div>
         </Fragment>
     );
@@ -18,7 +18,15 @@ const ProjectsPage = _ => {
 
 const projects = [
     {
-        id: 1,
+        name: "AppHub",
+        pictures: [
+            require("../../assets/AppHub1.jpg"),
+            require("../../assets/AppHub2.jpg")
+        ],
+        repoLink: "https://github.com/JJosephttg/AppHub",
+        languages: "React/JS, HTML, CSS, SQLite"
+    },
+    {
         name: "Geometry Dash C# Remake",
         pictures: [
             require("../../assets/GeometryDash1.png"), 
@@ -29,7 +37,6 @@ const projects = [
         languages: "C#, WPF"
     },
     {
-        id: 2,
         name: "My Portfolio",
         pictures: [
             require("../../assets/PortfolioProject1.png")
@@ -38,7 +45,6 @@ const projects = [
         languages: "React/JS, HTML, CSS"
     },
     {
-        id: 3,
         name: "NuGet Package Manager Remake/Alternative",
         pictures: [
             require("../../assets/NuGetAlt1.png")
@@ -47,7 +53,6 @@ const projects = [
         languages: "C#, WPF"
     },
     {
-        id: 4,
         name: "Mass Email Parser",
         pictures: [
             require("../../assets/WebScraper1.png")
