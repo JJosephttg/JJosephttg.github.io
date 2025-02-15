@@ -7,6 +7,8 @@ import geometryDash3 from '../../assets/GeometryDash3.png';
 import portfolioProject1 from '../../assets/PortfolioProject1.png';
 import nuGetAlt1 from '../../assets/NuGetAlt1.png';
 import webScraper1 from '../../assets/WebScraper1.png';
+import mockExt1 from '../../assets/APIMockExtension1.png';
+import mockExt2 from '../../assets/APIMockExtension2.png';
 
 import { ProjectItem } from '../../components/ProjectItem/ProjectItem';
 
@@ -42,6 +44,12 @@ const projects = [
     pictures: [webScraper1],
     repoLink: 'https://github.com/JJosephttg/Mass-Email-Parser',
     languages: 'Windows PowerShell',
+  },
+  {
+    name: 'API Mocking Extension Tool (WIP)',
+    pictures: [mockExt1, mockExt2],
+    repoLink: null,
+    languages: 'React/JS, HTML, CSS, WXT framework',
   },
 ];
 

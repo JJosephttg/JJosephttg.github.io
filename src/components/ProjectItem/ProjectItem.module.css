@@ -1,14 +1,14 @@
 .ProjectContainer {
     background-color: #333;
     height: 20rem;
-    width: 15rem;
+    width: 25rem;
     margin: 1rem;
     border-radius: .5rem;
     box-shadow: 2px 2px 1rem #121212;
 }
 
 .ProjectImage {
-    width: 15rem;
+    width: 25rem;
     height: 14rem;
     background-color: black;
     border-bottom: 1px solid red;

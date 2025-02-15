@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import styles from './ProjectItem.module.css';
 
@@ -6,7 +6,7 @@ type Props = {
   project: {
     name: string;
     pictures: string[];
-    repoLink: string;
+    repoLink: string | null;
     languages: string;
   };
 };
@@ -18,7 +18,11 @@ export function ProjectItem({ project }: Props) {
     currentImageIndex >= project.pictures.length - 1,
   );
 
-  const projectButtonStyleArr = ['material-icons', styles.ProjectButton];
+  const projectButtonStyleArr = [
+    'material-icons',
+    styles.ProjectButton,
+    project.repoLink ? '' : styles.disabled,
+  ];
 
   let nextProjectButtonStyle;
   let prevProjectButtonStyle = (nextProjectButtonStyle =
@@ -50,14 +54,16 @@ export function ProjectItem({ project }: Props) {
           >
             navigate_before
           </button>
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            className={styles.SourceLink}
-            href={project.repoLink}
+
+          <button
+            disabled={!project.repoLink}
+            className={projectButtonStyleArr.join(' ')}
+            onClick={() =>
+              !!project.repoLink && window.open(project.repoLink, '_blank')
+            }
           >
-            <button className={projectButtonStyleArr.join(' ')}>launch</button>
-          </a>
+            launch
+          </button>
           <button
             disabled={isNextDisabled}
             onClick={nextBtnClicked}
